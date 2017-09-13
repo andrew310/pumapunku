@@ -63,7 +63,7 @@ stories.add('with outlineColor and focusedBorderColor', () => (
     <H6>Textbox</H6>
     <P>{'with outlineColor and focusedBorderColor'}</P>
     <div style={{ width: '250px', padding: '30px' }}>
-      <TextBox placeholder={'pumapunku'} outlineColor={'#E6F3FF'} focusedBorderColor={'#89C6FF'} />
+      <TextBox placeholder={'pumapunku'} outlineColor={'#E6F3FF'} focusedBorderColor={'#67ABEA'} />
     </div>
   </div>
 ));
@@ -95,8 +95,8 @@ stories.add('with floating label, focusedLabelColor, outlineColor, and focusedBo
     <H6>Textbox</H6>
     <P>{'with floating label and focusedLabelColor'}</P>
     <div style={{ width: '250px', padding: '30px' }}>
-      <TextBox label={'username'} focusedLabelColor={'#90B8DD'} outlineColor={'#E6F3FF'} focusedBorderColor={'#89C6FF'} />
-      <TextBox label={'password'} type={'password'} focusedLabelColor={'#90B8DD'} outlineColor={'#E6F3FF'} focusedBorderColor={'#89C6FF'} />
+      <TextBox label={'username'} focusedLabelColor={'#90B8DD'} outlineColor={'#E6F3FF'} focusedBorderColor={'#67ABEA'} />
+      <TextBox label={'password'} type={'password'} focusedLabelColor={'#90B8DD'} outlineColor={'#E6F3FF'} focusedBorderColor={'#67ABEA'} />
     </div>
   </div>
 ));
