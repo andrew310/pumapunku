@@ -21,7 +21,7 @@ describe('<H5 />', () => {
     expect(renderedComponent.contains(children)).toBe(true);
   });
 
-  it('should render its text', () => {
+  it('should should have correct font-size based on modular scale', () => {
     const children = 'Text';
     const renderedComponent = shallow(
       <H5>{children}</H5>

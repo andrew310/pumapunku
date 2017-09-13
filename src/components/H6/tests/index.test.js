@@ -21,7 +21,7 @@ describe('<H6 />', () => {
     expect(renderedComponent.contains(children)).toBe(true);
   });
 
-  it('should render its text', () => {
+  it('have style rule of font-size 1em', () => {
     const children = 'Text';
     const renderedComponent = shallow(
       <H6>{children}</H6>
