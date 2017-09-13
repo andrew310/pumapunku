@@ -11,6 +11,7 @@ setOptions({
 
 function loadStories() {
   require('../stories/Typography');
+  require('../stories/TextBox');
 }
 
 configure(loadStories, module);

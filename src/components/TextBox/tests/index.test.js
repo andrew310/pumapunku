@@ -9,8 +9,8 @@ describe('<TextBox />', () => {
     const wrapper = mount(<TextBox label={'test'} />);
 
     expect(wrapper.containsAnyMatchingElements([
-      <label>test</label>,
-      <input />
+      <label htmlFor="test">test</label>,
+      <input />,
     ])).toEqual(true);
   });
 
@@ -18,10 +18,9 @@ describe('<TextBox />', () => {
     const wrapper = mount(<TextBox placeholder={'test'} />);
 
     expect(wrapper.containsAnyMatchingElements([
-      <input placeholder="test" />
+      <input placeholder="test" />,
     ])).toEqual(true);
 
     expect(wrapper.find('label').exists()).toEqual(false);
-
   });
 });
