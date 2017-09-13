@@ -12,6 +12,7 @@ setOptions({
 function loadStories() {
   require('../stories/Typography');
   require('../stories/TextBox');
+  require('../stories/CheckBox');
 }
 
 configure(loadStories, module);
