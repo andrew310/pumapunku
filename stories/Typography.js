@@ -77,7 +77,7 @@ stories.addDecorator((story) => {
   const baseFont = select('baseFontFamily', fontOptions, 'Poppins');
   const baseFontGoogle = baseFont.split(' ').join('+');
 
-  injectGlobal`
+  const getFonts = injectGlobal`
     @import url(https://fonts.googleapis.com/css?family=${headingsFontGoogle}:300,400,500,600,700);
     @import url(https://fonts.googleapis.com/css?family=${baseFontGoogle}:300,400,500,600,700);
   `;
@@ -92,7 +92,7 @@ stories.addDecorator((story) => {
       baseTextColor: '#86898B',
       baseTextWeight: 300,
     }}>
-    {content}
+    {getFonts, content}
   </ThemeProvider >
 );
 });
